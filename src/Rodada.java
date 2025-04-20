@@ -7,20 +7,12 @@ public class Rodada {
     private Participante jogadorAtual;
     private int valorSecreto;
 
-    /**
-     * Inicializa a rodada com um participante e sorteia o número alvo.
-     * @param jogador Participante da vez
-     */
+  
     public Rodada(Participante jogador) {
         this.jogadorAtual = jogador;
         this.valorSecreto = new Random().nextInt(100) + 1;
     }
 
-    /**
-     * Processa uma tentativa de chute do participante.
-     * @param tentativa número escolhido pelo jogador
-     * @return resultado como dica textual
-     */
     public String tentar(int tentativa) {
         jogadorAtual.registrarTentativa();
 
