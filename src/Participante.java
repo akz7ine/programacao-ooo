@@ -1,15 +1,10 @@
-/**
- * Representa um participante do jogo de adivinhação.
- */
+
 public class Participante {
     private String apelido;
     private int totalTentativas;
     private int score;
 
-    /**
-     * Cria um novo participante com nome definido.
-     * @param apelido Nome do jogador
-     */
+   
     public Participante(String apelido) {
         this.apelido = apelido;
         this.totalTentativas = 0;
